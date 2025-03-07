@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открыть 200 вкладок</title>
+    <style>
+        /* Центрируем кнопку на экране */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="openTabs()">Открыть 200 вкладок</button>
+
+    <script>
+        function openTabs() {
+            for (let i = 0; i < 200; i++) {
+                window.open("https://www.example.com");  // Замените на нужный URL
+            }
+        }
+    </script>
+
+</body>
+</html>
